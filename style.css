@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100%;
+    background-color: ;
+}
+
+.menu-button{
+    color: #ffffff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    padding: 20px 5% ;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky ;
+    z-index: 999;
+    background-color: rgba(207,189,250,255);
+    /* box-shadow:0 0 100px rgb(177, 177, 177) ; */
+    border-color: white;
+}
+
+.navbar .logo h1{
+    color: #ffffff;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    transition: 0.3s;
+    letter-spacing: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.navbar .logo h1:hover{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar .menu li{
+    list-style: none ;
+    display: inline-block;
+    margin-top: 15px;
+
+
+}
+
+
+
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: #ffffff;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size:20px ;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+
+}
+
+
+.navbar .menu a .active{
+    border-bottom: 4px solid rgb(255, 255, 255) ;
+    text-decoration: none;
+
+}
+
+.navbar .menu li a i{
+    color: rgb(255, 255, 255);
+
+}
+
+.navbar .menu li a:hover{
+    border-bottom: 4px solid rgb(255, 255, 255) ;
+
+}
+
+/* content */
+
+.content{
+    background-size: 100%;
+    background-image: url(i.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 89vh;
+}
+
+.content h1{
+    font-size: 38px;
+    font-family: Bebas Neue;
+}
+
+.content p{
+    font-size: 28px;
+    margin-top: 0;
+    font-family: Bebas Neue;
+
+}
+
+.content button{
+    background-color: none;
+    margin-top: 15px;
+    padding: 15px 30px;
+    border: none    ;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.content button:hover{
+    background-color: rgba(217,189,250,255);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.pheading{
+    text-align: center;
+    margin: 30px 0;
+    font-family: Pacifico;
+    letter-spacing: 3px;
+    background: #92CEE5;
+background: -webkit-linear-gradient(top left, #92CEE5, #B2BEFF);
+background: -moz-linear-gradient(top left, #92CEE5, #B2BEFF);
+background: linear-gradient(to bottom right, #92CEE5, #B2BEFF);
+    box
+    
+
+    
+}
+
+/* products */
+
+.sec{
+    padding: 10px 5%;
+    margin-bottom: 30px;
+    /* margin-top: -4%; */
+    /* background-image: linear-gradient(120px #7EE8FA) ;
+    Created with https://www.css-gradient.com */
+/* Created with https://www.css-gradient.com */
+background: #92CEE5;
+background: -webkit-linear-gradient(top left, #92CEE5, #B2BEFF);
+background: -moz-linear-gradient(top left, #92CEE5, #B2BEFF);
+background: linear-gradient(to bottom right, #92CEE5, #B2BEFF);
+  
+}
+
+.products{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.products .cards{
+    width: 350px;
+    background: rgba(207,190,260,200);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    
+}  
+
+
+.products .cards img{
+    height: 280px;
+    width: 100%;
+    margin-left: -17px;
+}
+
+
+
+.products .cards .desc{
+    text-align: center;
+    margin-top: -15px;
+}
+
+.products .cards .title{
+    font-weight: 900;
+    font-size: 20px;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Kanit;
+}
+
+.products .cards .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.products .cards .box .price{
+    background-color: white;
+    margin-top: 10px;
+    color: #000000;
+    padding: 8px 20px;
+    border: none    ;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    border-radius: 15px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.19)
+     0px 10px 20px,
+     rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.products .cards .box .btn{
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none    ;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19)
+     0px 10px 20px,
+     rgba(0, 0, 0, 0.23) 0px 6px 6px;
+     color: none;
+     translate: 0.15s ease-in;
+}
+
+.products .cards .box .btn:hover{
+    cursor: pointer;
+    background-color: #9dbfdb;
+  }
+
+.others{
+  padding: 0;
+  margin-bottom: 30px;
+  background-color:aquamarine;
+  height: 2px;
+}
+
+
+
+
+
+
+.footer-clean {
+    padding:50px 0;
+    background-color:rgba(207,189,250,255);
+    color:#000000;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+
+  }
